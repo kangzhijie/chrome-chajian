@@ -1,0 +1,20 @@
+{
+    "name": "img demo",
+    "description" : "hello this is demo",
+    "version": "1.0",
+    "manifest_version": 2,
+    "browser_action": {
+    "default_popup": "./src/popup.html",
+        "default_icon": "./src/image/icon.png"
+    },
+    "commands": {
+        "_execute_browser_action": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+F",
+                    "mac": "MacCtrl+Shift+F"
+            },
+        "description": "Opens popup.html"
+        }
+    },
+    "content_security_policy": "style-src 'self' 'unsafe-inline';script-src 'self' 'unsafe-eval' https://cdn.bootcss.com; object-src 'self' ;"
+}

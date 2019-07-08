@@ -1,0 +1,18 @@
+{
+  "name": "chrome-demo",
+  "version": "1.0.0",
+  "description": "谷歌插件demo",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "mdhh",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "4.3.1",
+    "jquery": "3.4.1"
+  }
+}
