@@ -7,12 +7,16 @@
 </head>
 <body style="width: 300px;height: 400px">
     <div id="app">
-        <button @click="show" class="btn btn-primary">切换</button>
+        <button @click="show" class="btn btn-primary">咋回事</button>
+
+        <div v-for="(value, key) in buttonList" style="display: inline">
+            <button @click="show(key)" class="btn btn-primary" :value=`${key}`>{{value}}</button>
+        </div>
+
     </div>
 </body>
 </html>
 <script src="./lib/vue.js"></script>
 <script src="main.js"></script>
-<!--<script src="./js/home.js"></script>-->
 <script src="./js/app.js"></script>
 
