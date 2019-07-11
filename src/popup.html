@@ -4,19 +4,25 @@
     <meta charset="UTF-8">
     <title>i am a demo</title>
     <link rel="stylesheet" href="./lib/bootcss.css">
+
 </head>
-<body style="width: 300px;height: 400px">
+
+<body style="width: 320px; min-height: 80px;padding: 3px 5px;">
+
     <div id="app">
-        <button @click="show" class="btn btn-primary">咋回事</button>
-
-        <div v-for="(value, key) in buttonList" style="display: inline">
-            <button @click="show(key)" class="btn btn-primary" :value=`${key}`>{{value}}</button>
-        </div>
-
+        <ul class="nav nav-tabs" >
+            <li class="nav-item" v-for="(item, key) in buttonList">
+                <a class="nav-link active" href="#" @click="show">{{item.value}}</a>
+<!--                <router-link href="#" :to="/freelogin" class="nav-link active">{{item.value}}</router-link>-->
+            </li>
+        </ul>
     </div>
+
 </body>
 </html>
+
 <script src="./lib/vue.js"></script>
 <script src="main.js"></script>
 <script src="./js/app.js"></script>
+
 

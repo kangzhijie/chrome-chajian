@@ -1,14 +1,18 @@
-// app.js
 
 new Vue({
     el: '#app',
+    component:{
+
+    },
     data: {
         message: 'Hello Vue!',
-        buttonList: {freeLogin: "免密登录", onlyLogin: "账号密码"}
+        buttonList: [{key: "freeLogin", value: "免密登录", route: "./template/freelogin",},
+            {key: "onlyLogin", value: "账号密码", route: "./"}]
     },
     methods: {
         show: function (type) {
-            console.log("that not good idea::", type)
+            console.log("that not good idea::", type);
+            window.location.href = ("./template/freelogin.html");
         }
     }
 })
