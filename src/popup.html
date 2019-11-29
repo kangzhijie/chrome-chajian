@@ -12,8 +12,11 @@
     <div id="app">
         <ul class="nav nav-tabs" >
             <li class="nav-item" v-for="(item, key) in buttonList">
-                <a class="nav-link active" href="#" @click="show">{{item.value}}</a>
+                <a class="nav-link active" href="/src/template/freelogin.html" >{{item.value}}</a>
+
+<!--                <a class="nav-link active" href="#" @click="show">{{item.value}}</a>-->
 <!--                <router-link href="#" :to="/freelogin" class="nav-link active">{{item.value}}</router-link>-->
+<!--                <router-link :to="{{item.route}}"><button>{{item.value}}</button></router-link>-->
             </li>
         </ul>
     </div>
